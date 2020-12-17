@@ -85,6 +85,13 @@
 		width: 100%;
 		display: flex;
 		align-items: center;
+		position: sticky;
+		background: #FFFFFF;
+		padding-bottom: 20upx;
+		top:  135upx;
+		/*  #ifdef  APP-PLUS  */
+		top: calc(115upx + var(--status-bar-height));
+		/*  #endif  */
 		.right{
 			width: calc(100% - 30rpx);
 			box-sizing: border-box;
@@ -199,6 +206,9 @@
 						height: 24rpx;
 					}
 				}
+			}
+			&:first-of-type{
+				margin-top: 20rpx;
 			}
 		}
 	}

@@ -1,16 +1,80 @@
 {
+	"globalStyle": {
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "城中村",
+		"backgroundColor": "#FFFFFF"
+	},
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-			"path": "pages/index/index",
+			"path": "pages/tabBar/home/home",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarBackgroundColor":"#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"navigationBarTitleText": "城中村",
+				"app-plus": {
+					"titleNView": false,//禁用原生导航栏
+					"bounce":"none",
+					"scrollIndicator": "none"
+				}
+			}
+		}
+		,{
+			"path": "pages/tabBar/release/release",
+			"style": {
+				"navigationBarBackgroundColor":"#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"navigationBarTitleText": "发布房源",
+				"app-plus": {
+					// "titleNView": false,//禁用原生导航栏
+					"bounce":"none",
+					"scrollIndicator": "none"
+				}
+			}
+		}
+		,{
+			"path": "pages/tabBar/my/my",
+			"style": {
+				"navigationBarBackgroundColor":"#FFFFFF",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "我的",
+				"app-plus": {
+					"titleNView": false,//禁用原生导航栏
+					"bounce":"none",
+					"scrollIndicator": "none"
+				}
 			}
 		}
 	],
-	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+	"tabBar": {
+	    "color": "#8E8E8E",
+	    "selectedColor": "#4B4948",
+	    "borderStyle": "white",
+		// #ifdef APP-PLUS   
+		"borderStyle": "#F4F4F4",
+		// #endif  
+	    "backgroundColor": "#F4F4F4",
+		"iconWidth": "20px",
+		"fontSize": "10.5px",
+	    "list": [
+			{
+				"pagePath": "pages/tabBar/home/home",
+				"iconPath": "static/tabBar/home.png",
+				"selectedIconPath": "static/tabBar/home_selected.png",
+				"text": "首页"
+			} 
+			,{
+				"pagePath": "pages/tabBar/release/release",
+				"iconPath": "static/tabBar/release.png",
+				"selectedIconPath": "static/tabBar/release_selected.png",
+				"text": "发布房源"
+			}
+			,{
+				"pagePath": "pages/tabBar/my/my",
+				"iconPath": "static/tabBar/my.png",
+				"selectedIconPath": "static/tabBar/my_selected.png",
+				"text": "研享"
+			}
+		]
 	}
 }

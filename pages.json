@@ -73,7 +73,7 @@
 				"pagePath": "pages/tabBar/my/my",
 				"iconPath": "static/tabBar/my.png",
 				"selectedIconPath": "static/tabBar/my_selected.png",
-				"text": "研享"
+				"text": "我的"
 			}
 		]
 	}

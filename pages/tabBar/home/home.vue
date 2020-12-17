@@ -49,7 +49,7 @@
 					<image class="house_img" :src="item.imgSrc" />
 					<view class="right">
 						<view class="top">
-							<text class="title">{{item.type}}·{{item.title}} {{item.roomType}}</text>
+							<text class="title">{{item.type}}·{{item.name}} {{item.roomType}}</text>
 							<view class="label_ul">
 								<text class="label_list" v-for="(item2,index2) in item.label" :key="index2">{{item2}}</text>
 							</view>
@@ -126,7 +126,7 @@
 				houseArr:[{
 					imgSrc:'/static/home/house.png',
 					type:'整租',
-					title:'花园里32栋',
+					name:'花园里32栋',
 					roomType:'三室两厅',
 					label:['近地铁','有电梯','民水民电'],
 					area:'89m²',
@@ -138,7 +138,7 @@
 				{
 					imgSrc:'/static/home/house.png',
 					type:'整租',
-					title:'花园里32栋',
+					name:'花园里32栋',
 					roomType:'三室两厅',
 					label:['近地铁','有电梯','民水民电'],
 					area:'89m²',
@@ -150,7 +150,7 @@
 				{
 					imgSrc:'/static/home/house.png',
 					type:'整租',
-					title:'花园里32栋',
+					name:'花园里32栋',
 					roomType:'三室两厅',
 					label:['近地铁','有电梯','民水民电'],
 					area:'89m²',
@@ -162,7 +162,7 @@
 				{
 					imgSrc:'/static/home/house.png',
 					type:'整租',
-					title:'花园里32栋',
+					name:'花园里32栋',
 					roomType:'三室两厅',
 					label:['近地铁','有电梯','民水民电'],
 					area:'89m²',
@@ -174,7 +174,7 @@
 				{
 					imgSrc:'/static/home/house.png',
 					type:'整租',
-					title:'花园里32栋',
+					name:'花园里32栋',
 					roomType:'三室两厅',
 					label:['近地铁','有电梯','民水民电'],
 					area:'89m²',
@@ -186,7 +186,7 @@
 				{
 					imgSrc:'/static/home/house.png',
 					type:'整租',
-					title:'花园里32栋',
+					name:'花园里32栋',
 					roomType:'三室两厅',
 					label:['近地铁','有电梯','民水民电'],
 					area:'89m²',
@@ -198,7 +198,7 @@
 				{
 					imgSrc:'/static/home/house.png',
 					type:'整租',
-					title:'花园里32栋',
+					name:'花园里32栋',
 					roomType:'三室两厅',
 					label:['近地铁','有电梯','民水民电'],
 					area:'89m²',
